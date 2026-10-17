@@ -1,0 +1,411 @@
+
+/* =================================
+   PASTEL PINK LOVE WEBSITE 💗
+   ================================= */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===== WEBSITE BACKGROUND ===== */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    
+    background-image:
+        linear-gradient(
+            rgba(255, 238, 246, 0.30),
+            rgba(255, 238, 246, 0.30)
+        ),
+        url(1.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #957080;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.93);
+    border: 2px solid rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(211, 139, 169, 0.25);
+
+    text-align: center;
+}
+
+/* ===== HEART LOGO ===== */
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    background: #fff0f6;
+    border: 2px solid #ffe0ec;
+    border-radius: 50%;
+
+    font-size: 55px;
+
+    animation: heartbeat 2s infinite;
+}
+
+/* ===== MAIN HEADING ===== */
+
+h1 {
+    color: #df8eae;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #bd819b;
+    font-style: italic;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin: 25px 0;
+    padding: 15px;
+
+    background: rgba(255, 240, 247, 0.95);
+    border: 1px solid #f8dce8;
+    border-radius: 18px;
+}
+
+nav a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #b56f8c;
+
+    background: #ffffff;
+    border: 1px solid #f5d4e2;
+
+    padding: 10px 16px;
+    border-radius: 25px;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #f6c1d6;
+    color: #874b66;
+    transform: translateY(-3px);
+}
+
+/* ===== CONTENT SECTIONS ===== */
+
+section {
+    margin: 25px 0;
+    padding: 25px;
+
+    background: rgba(255, 250, 253, 0.97);
+    border: 1px solid #f8dce8;
+    border-radius: 20px;
+
+    scroll-margin-top: 20px;
+    color: #957080;
+}
+
+h2 {
+    color: #df8eae;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #c77f9e;
+    font-size: 18px;
+    margin: 22px 0 15px;
+}
+
+section p {
+    color: #a8788f;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* ===== APPRECIATION LIST ===== */
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul li {
+    background: #fff0f6;
+    padding: 12px;
+    margin: 9px 0;
+
+    border: 1px solid #fce4ed;
+    border-radius: 12px;
+
+    color: #a96f89;
+
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: #ffe3ee;
+    transform: translateX(4px);
+}
+
+/* ===== DECORATIVE TEXT ===== */
+
+.decoration {
+    color: #e6a9c2;
+    margin-top: 20px;
+}
+
+/* ===== LOVE NOTE ===== */
+
+.love-note {
+    padding: 20px;
+
+    background: #fff0f6;
+    border-left: 4px solid #efaec8;
+    border-radius: 12px;
+
+    color: #a66e87;
+    font-style: italic;
+    line-height: 1.9;
+}
+
+/* ===== YOUTUBE BUTTON ===== */
+
+.youtube-btn {
+    display: inline-block;
+
+    background: #f6c5d9;
+    color: #874b66;
+
+    padding: 14px 25px;
+    margin: 15px auto;
+
+    border-radius: 30px;
+    border: 2px solid #f7dce7;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(211, 139, 169, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.youtube-btn:hover {
+    background: #efa9c5;
+    color: #783e58;
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(211, 139, 169, 0.3);
+}
+
+/* ===== SURPRISE BUTTON ===== */
+
+button {
+    border: 1px solid #edb3ca;
+
+    padding: 14px 25px;
+    margin-top: 10px;
+
+    border-radius: 30px;
+
+    background: #f5bfd3;
+    color: #874b66;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(211, 139, 169, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #eda8c2;
+    transform: scale(1.04);
+}
+
+button:disabled {
+    cursor: default;
+}
+
+/* ===== SURPRISE MESSAGE ===== */
+
+#surprise {
+    margin-top: 25px;
+    padding: 22px;
+
+    background: #fff0f6;
+    border: 1px solid #f4d3e1;
+    border-radius: 18px;
+
+    color: #a66e87;
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* Keep hidden surprise hidden until clicked */
+
+#surprise[hidden] {
+    display: none !important;
+}
+
+#surprise h3 {
+    margin-top: 0;
+}
+
+#surprise p {
+    color: #a66e87;
+}
+
+/* ===== BIG HEART ===== */
+
+.big-heart {
+    font-size: 65px;
+    color: #e99dbb;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    margin-top: 30px;
+    padding: 20px 10px 5px;
+
+    color: #a97891;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== TABLET AND MOBILE ===== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+        background-attachment: scroll;
+    }
+
+    .container {
+        padding: 20px 14px;
+        border-radius: 20px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+        font-size: 46px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    nav {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .youtube-btn {
+        max-width: 100%;
+        padding: 12px 18px;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #c77f9e;
+    outline-offset: 4px;
+}
+
+/* Reduce animations if preferred by the device */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
